@@ -30,9 +30,7 @@ const Form = () => {
     const transaction = { ...formData, amount: Number(formData.amount), id: uuidv4()} 
     
     setOpen(true)
-    
     addTransaction((transaction))
-    //Reset form for new transaction
     setFormData(initialState)
   }
 
